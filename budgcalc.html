@@ -1,0 +1,167 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BudgetCalculator</title>
+
+    <link rel="stylesheet" href="budgetcalc.css" />
+</head>
+
+<body>
+    <section class="form-container">
+
+        <div class="two-content">
+            <div class="form-content">
+                <label for="">Income</label>
+                <input type="text">
+            </div>
+
+            <div class="form-content">
+                <label for="">Age</label>
+                <input type="number">
+            </div>
+        </div>
+
+        <div class="two-content">
+            <div class="form-content">
+                <label for="">Marital Status</label>
+                <input type="text">
+            </div>
+
+            <div class="form-content">
+                <label for="">Number of dependents</label>
+                <input type="number">
+            </div>
+        </div>
+    </section>
+    <div class="wrap-container">
+        <div class="container-major">
+            <div class="mini-container">
+
+                <div class="budget-container">
+                    <h3>Budget</h3>
+
+                    <input type="number" id="budget" placeholder="Enter Budgeted Amount" />
+
+                   <button class="budget-btn" id="budget-btn">Submit Budget</button>
+                </div>
+
+                <div class="expense-container">
+                    <h3>Expenses</h3>
+
+                    </p>
+                    <div class="totalcategorylist-wrapper">
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat" placeholder="Budget category--Food" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category---Medical" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Clothing" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage---Utiliities" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--School Expenses" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--House Rent" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Insurance" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Savings" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Visitation to park" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Family Support" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Miscellaneous" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+                        <div class="category-wrapper">
+                            <input type="text" class="budget-cat" id="budget-cat"
+                                placeholder="Budget category--Tech Books" />
+                            <input type="number" id="alot-amount" placeholder="Cost in Naira" />
+
+                            <input type="number" id="alot-percent" placeholder="budget percentage" />
+
+                        </div>
+
+                    </div>
+                    <button class="budget-btn" id="budget-plan">Submit Details</button>
+                </div>
+            </div>
+
+            <div class="out-container">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amt">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="amt-expense">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="bal-amt">0</span>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
